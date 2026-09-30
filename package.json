@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeploy": "npm run dev",
+    "predeploy": "npm run build",
     "deploy": "wrangler pages deploy dist --project-name=todo-app-th"
   },
   "dependencies": {
