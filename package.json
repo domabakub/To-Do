@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run dev",
+    "deploy": "wrangler pages deploy dist --project-name=todo-app-th"
   },
   "dependencies": {
     "lucide-react": ">=0.460.0",
@@ -17,6 +19,7 @@
     "@tailwindcss/vite": "^4.0.0",
     "@vitejs/plugin-react": "^4.3.4",
     "tailwindcss": "^4.0.0",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "wrangler": "^4.144.0"
   }
 }
